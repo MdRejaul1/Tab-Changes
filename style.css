@@ -1,0 +1,52 @@
+.tab-container {
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the tabs */
+  }
+
+
+  
+.tab-label {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    display: inline-block;
+    text-align: center;
+    width: calc(100% / 3); /* Divide the width equally among the tabs */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-right: -4px;
+   
+  }
+
+  
+input[type="radio"] {
+    display: none;
+  }
+
+
+  input[type="radio"]:checked + .tab-label {
+    background-color: #ffffff;
+    font-weight: bold;
+    
+}
+
+
+.tab-content {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+
+  
+  .tab-content .content {
+    display: none;
+  }
+
+  
+#tab1:checked ~ .tab-content #content1,
+#tab2:checked ~ .tab-content #content2,
+#tab3:checked ~ .tab-content #content3 {
+  display: block;
+}
